@@ -1,0 +1,43 @@
+{
+  "title": "城市文旅活动容量与消费结算领域上下文",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "actors",
+    "facts",
+    "constraints"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "const": "city-tourism-capacity"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
